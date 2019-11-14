@@ -1,0 +1,35 @@
+<!-- <p>
+  Author: Carlos Torres <ct059489@gmail.com>
+</p> -->
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h3>Actualizar  Vehículo</h3>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="">Placa</label>
+          <input [(ngModel)]="vehiculo.placa" name="placa" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Marca</label>
+          <input [(ngModel)]="vehiculo.marca" name="marca" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Referencia</label>
+          <input [(ngModel)]="vehiculo.refernciaVehi" name="refernciaVehi" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Modelo</label>
+          <input [(ngModel)]="vehiculo.modelo" name="modelo" type="number" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Id Tipo</label>
+          <input [(ngModel)]="vehiculo.idtipoV" name="idtipoV" type="number" class="form-control">
+        </div>
+        <button (click)="Actualizar(vehiculo)" class="btn btn-danger">Actualizar</button>
+      </form>
+    </div>
+  </div>
+</div>

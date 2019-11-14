@@ -1,0 +1,35 @@
+<!-- <p>
+ Author: Carlos Torres <ct059489@gmail.com>
+</p> -->
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Tipos de Vehículo</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Placa</th>
+            <th>Marca</th>
+            <th>Referencia</th>
+            <th>Modelo</th>
+            <th>Id Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vehiculo of vehiculos" class="text-center">
+            <td>{{vehiculo.placa}}</td>
+            <td>{{vehiculo.marca}}</td>
+            <td>
+              <button (click)="Editar(vehiculo)" class="btn btn-warning">Editar</button>
+              <!-- Luego de poner el metodo editar, ir al archivo service.service y crear los metodos
+              getTipovehiculoId() y updateTipovehiculo()  -->
+              <button class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
